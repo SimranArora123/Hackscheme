@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+
+<h1 style="text-align: center;"> Compose A New Blog </h1>
+<div class="container">
+    <div class="row">
+        
+        <div style="width: 30%; margin: 25px auto;">  
+            <form action="/schemes" method="post">
+                
+                <div class="form-group"> <input class="form-control" type="text" name="Technology" placeholder="Technology"></div>
+                <div class="form-group"> <input class="form-control" type="text" name="image" placeholder="image url"></div>
+                <div class="form-group"> <input class="form-control" type="text" name="Use" placeholder="Use"></div>
+                <div class="form-group"> <button class="btn btn-lg btn-default btn-block btn-success">submit</button></div>
+            </form>
+            
+        </div>
+    </div>
+    
+</div>
+
+<%- include('./partials/footer') %>

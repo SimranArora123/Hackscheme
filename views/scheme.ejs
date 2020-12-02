@@ -1,0 +1,44 @@
+<%- include('./partials/header') %>
+<div class="blog">
+	<header>
+  <h1>Schemes</h1>
+  
+</header>
+<div class="band">
+
+
+  <div class = "item-1" >
+      <a href = '<%= yojna[0].link %>' class = "card" > 
+      <div class = "thumb" style = "background-image: url('<%=yojna[0].Image %>'); " > </div> 
+  
+      <article >
+      <h1 > <%= yojna[0].Title %> </h1>  
+      <p > <%= yojna[0].Description %> </p> 
+    
+      </article> 
+      </a> 
+    </div>
+ 
+
+ <% for(let i=1 ;i< yojna.length ;i++){ %>
+  <div class = "item-2" >
+      <a href = '<%= yojna[i].link %>' class = "card" > 
+      <div class = "thumb" style = "background-image: url('<%=yojna[i].Image %>'); " > </div> 
+  
+      <article >
+      <h1 > <%= yojna[i].Title %> </h1>  
+      <p > <%= yojna[i].Description %> </p> 
+    
+      </article> 
+      </a> 
+    </div>
+<% } %>
+
+ 
+  
+  </div>
+</div>
+	</div>
+
+ 
+<%- include('./partials/footer') %>
