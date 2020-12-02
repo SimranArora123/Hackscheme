@@ -48,9 +48,10 @@ const companySchema = mongoose.Schema({
     Crop: String,
     Name: String,
     Price: String,
-    CIN: String,
+    Cin: String,
     email: String,
-    contactNo: String
+    contactNo: String,
+    img:String
 
 });
 
@@ -102,10 +103,9 @@ app.get('/company', (req, res) => {
     Company_info.find((err, company) => {
         if (err)
             console.log(err)
-        else{
-        console.log(company)
+        else
         res.render('company',{company:company})
-        }
+        
     })
 
 })
