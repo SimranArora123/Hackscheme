@@ -11,18 +11,20 @@
         
     <% for(let i=0 ;i< company.length ;i++){ %>
         <div class = "item-2" >
-            <a href="#" class = "card" > 
-            <div class = "thumb" > </div> 
+            <a  class = "card" > 
+            <div class = "thumb" style = "background-image: url('<%= company[i].img %>'); " > </div> 
         
             <article >
-              
-            <p > <strong>Address:</strong><br><%= company[i].Address %> </p> 
+            <p > <strong>Name: </strong><%= company[i].Name %> </p>  
             <p > <strong>Company Type:</strong><%= company[i].CompanyType %> </p>
-            <p > <strong>Name: </strong><%= company[i].Name %> </p> 
-            <p > <strong>Contract Type:</strong><%= company[i].ContractType %> </p>
             <p > <strong>Crop:</strong><%= company[i].Crop %> </p>
-            <p > <strong> Price: </strong><%= company[i].Price %> </p>
-            <p ><strong> CIN:</strong><%= company[i].CIN %> </p>
+            <p > <strong> Price(per quintol): </strong><%= company[i].Price %> </p>
+            
+            <p > <strong>Contract Type:</strong><%= company[i].ContractType %> </p>
+           
+            
+            <p ><strong> CIN:</strong> <%= company[i].Cin %> </p>
+             <p > <strong>Address:</strong><br><%= company[i].Address %> </p> 
             <p ><strong> Email:</strong><%= company[i].email %> </p>
                 <p ><strong>Contact No.: </strong><%= company[i].contactNo %> </p>
           
