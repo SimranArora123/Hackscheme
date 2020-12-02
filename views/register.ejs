@@ -1,22 +1,28 @@
 <%- include('./partials/header') %>
 
 
-<h1 style="text-align: center;margin-top: 3%;"><strong>SIGN UP</strong></h1>
-
-<div class="container">
-    <div class="row">
+<div class="log">
+    <h2><strong>SIGNUP</strong></h2>
+    <form action="/register" method="post">
+      <div class="input-cont">
+        <input type="email" name="username" placeholder="Email" required>
         
-        <div style="width: 30%; margin: 25px auto;">  
-            <form action="/register" method="post">
-                
-                <div class="form-group"> <input class="form-control" type="email" name="email" placeholder="Email" required></div>
-                <div class="form-group"> <input class="form-control"type="number" name="id" placeholder="Institute Id" required></div>
-                <div class="form-group"> <input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"> <button class="btn btn-lg btn-default btn-block btn-success">submit</button></div>
-            </form>
-            <a href="/login">Login</a>
-        </div>
-    </div>
-    
+        <div class="border1"></div>
+      </div>
+      <div class="input-cont">
+        <input type="number" name="id" placeholder="Institute Id" required>
+        
+        <div class="border2"></div>
+      </div>
+      <div class="input-cont">
+        <input type="password" name="password" placeholder="Password" required>
+        
+        <div class="border2"></div>
+      </div>
+   
+      <a href="/login" style="float: right; font-size: 18px;">Login</a>
+      <div class="clear"></div>
+      <input type="submit" value="SUBMIT">   
+    </form>
 </div>
 <%- include('./partials/footer') %>

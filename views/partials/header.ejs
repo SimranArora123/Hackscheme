@@ -3,7 +3,7 @@
 <head>
   <title>Scheme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
  
   <link rel="stylesheet" type="text/css" href="/css/scheme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,11 +26,26 @@
     <h1>AGRI Tech</h1>
                
       <%  if(!currentUser){ %>         
-         <a href="/login">LOGIN</a>
-         <a href="/register">SIGN UP</a>
           <a href="/schemes" >SCHEMES</a>
           <a href="/company" >COMPANY</a>
-          
+          <div class="dropdown">
+            <button class="dropbtn">SIGN UP
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/register">SignUp as farmer</a>
+              <a href="/register">SignUp as company</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">LOGIN
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/login">Login as farmer</a>
+              <a href="/login">Login as company</a>
+            </div>
+          </div>
           
         <a href="/">BLOGS</a>
       <% }else{ %> 
